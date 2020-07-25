@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
 
-html{
-    margin: 0;
-    padding: 0;
-}
 body {
     background-color: #2e3440;
     margin: 0;
     padding: 0;
+    font-family: 'B612 Mono', monospace;
 }
 a:link{
     color: #88c0d0;
@@ -28,25 +25,31 @@ a:hover
 .container{
     text-align: center;
     font-family: 'B612 Mono', monospace;
+    margin: 0;
+    padding: 0;
 }
 .container ul {
     list-style-type: none;
     font-size: 2.2em;
-    margin-top: 3em;
+    margin-top: 2em;
     padding: 0, 3em, 0em, 3em;
 }
 .container li {
-    padding: 1em;
+    background-color: #3b4252;
+    padding: .2em .5em .2em .5em;
+    border-radius:10px;
     display: inline-block;
+    margin: .5em;
 }
 .nord-fox {
     margin: -1em;
-    max-width: 36%;
+    max-width: 40%;
     width: auto;
     height: auto;    
 }
 
 .container2{
+
     text-align: center;
     font-family: 'B612 Mono', monospace;
 }
@@ -56,8 +59,61 @@ a:hover
     margin-top: 2em;
 }
 .container2 li {
-    margin-left: 1.2em;
-    margin-right: 1.2em;
-    padding: .8em;
+    background-color: #3b4252;
+    padding: .5em .5em .5em .5em;
+    border-radius:10px;
+    margin: .5em .5em .8em .5em;
     display: inline-block;
+    
 }
+
+form {
+    background-color: #2e3440;
+    margin-top: 2.4em;
+    padding: 2em;
+}
+.search {
+    color: #88c0d0;
+    background-color: #3b4252;
+    width: 35em;
+    height: 48px;
+    margin: .7em;
+    padding: 1.2em;
+    border-radius: 15px;
+    border: transparent;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    font-size: 22px;
+}
+
+
+
+.button {
+    color: #88c0d0;
+    background-color: #3b4252;
+    width: 6em;
+    height: 48px;
+    font-family: 'B612 Mono', monospace;
+    font-size: 22px;
+    font-weight: normal;
+    margin: .7em;
+    border-radius: 15px;
+    display: inline-block;
+    border: transparent;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.button:hover {
+    background-color: #2e3440;
+    color: #bf616a;
+    border: 2px solid;
+}
+
+.search:hover {
+    background-color: #2e3440;
+    color: #bf616a;
+    border: 2px solid;
+}
+
+
